@@ -1,16 +1,21 @@
 var saveButton = document.querySelector(".save-btn").addEventListener("click", function(){
     console.log("test");
 
-    //save input text to local storage//
-
-    //retreave local storeage//
-
+    //save input text 
+    localStorage.setItem("ToDo,");
+    
+    //retreave storage
+    document.getElementById("result").innerHTML = localStorage.getItem("ToDo");
+    
     //input retreaved loal storage back to line
     })
     
     var colorTime = document.querySelectorAll (".description");
     var colorTimeArray = Array.from (colorTime);
     console.log (colorTimeArray);
+
     //write a function to loop through color time array
-    //write an if statement to check current time against the list object time and return true or false
-    //each if statement should determine wether to add class of past/present/future to the todo element
+    console.log (moment().format())
+
+    //write an if statement 
+    //each if statement should determine wether to add class to the todo element
